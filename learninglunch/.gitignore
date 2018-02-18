@@ -1,0 +1,4 @@
+# Ignore generated folder
+build/
+bin/
+lib/

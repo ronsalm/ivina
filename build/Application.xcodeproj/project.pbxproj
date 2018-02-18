@@ -1,0 +1,4084 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0A27ECA6378D4FA4ABDE3426 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 917CD266040545E6933E84E0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				60A71C0905D6412A9949B289 /* CMake Rules */,
+			);
+			dependencies = (
+				162A5A4F8CDC4F9FA032099C /* PBXTargetDependency */,
+				A583705CCD784CEBA1622CA4 /* PBXTargetDependency */,
+				E7C3768070D4412F8F2F9711 /* PBXTargetDependency */,
+				695B219791EA4909A2F155A1 /* PBXTargetDependency */,
+				AE0070F7265942EAA5812218 /* PBXTargetDependency */,
+				3255A7E51EC24E2CBE4482B6 /* PBXTargetDependency */,
+				E80F225390C045E294BE2BF1 /* PBXTargetDependency */,
+				4735A902F82D4F9A91F59F20 /* PBXTargetDependency */,
+				81A0C5E81FE94A3F8F851F51 /* PBXTargetDependency */,
+				93F95DCDEEC942F69D934420 /* PBXTargetDependency */,
+				914207B555D442C48C0A878D /* PBXTargetDependency */,
+				81E07D4DD5794D6E82A3E9B4 /* PBXTargetDependency */,
+				4A1EAFF990304AF0AFC8F8DB /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		70511C1B703C4DA9BC4CBCB4 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3601D7CBF52F43849DE1209D /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				EB31CF14B02C4838B37A4EF4 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7E62DEA4DBDE4383A977A189 /* doc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 04B208456E494146B8FDDEA6 /* Build configuration list for PBXAggregateTarget "doc" */;
+			buildPhases = (
+				1143970DF8504FC5B2F597BF /* CMake Rules */,
+			);
+			dependencies = (
+				91359F15C20B41F29C867595 /* PBXTargetDependency */,
+			);
+			name = doc;
+			productName = doc;
+		};
+		9CFB650983074299AF3EC978 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D16AEF3BD96D4C4CAA4E7049 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				38B44120A6C249DFB57CF19C /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		15351A031C43485799A3442C /* gtest_main.cc in Sources */ = {isa = PBXBuildFile; fileRef = B327B5D35A0544A980A93E4E /* gtest_main.cc */; };
+		3EBEE13ABA8D408BBE03AFC7 /* ObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D302099BA27545949A5266C9 /* ObjectManager.cpp */; };
+		409905253E064588B51421EA /* Counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03238CD75DAC4093A3CD2684 /* Counter.cpp */; };
+		51D3423E05F54B70A0E79F3D /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2834A499D46A4474A360CE77 /* Object.cpp */; };
+		67E216B1BD5B4426A4D0DEC0 /* CounterFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8B6F2BB2EE4517A38D9C89 /* CounterFactory.cpp */; };
+		717ACAF136554232A8DDF587 /* gtest-counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E4420DB43B46F59521FF60 /* gtest-counter.cpp */; };
+		773DA9748D8A4877A449F873 /* Incrementor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD48EC957B8F4C35ACB48917 /* Incrementor.cpp */; };
+		81864383532640F7A79FC0B9 /* gtest-decrementor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D6EF101C2F54CFDBF894F3A /* gtest-decrementor.cpp */; };
+		837E1D56E80D493BA3C80E9F /* gtest-death-test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0E847D8EDE0C48609A7F1506 /* gtest-death-test.cc */; };
+		85FF1BB2B0DC435E9EC8F6A6 /* gtest-object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D009166CB3AB400D9C71F5CE /* gtest-object.cpp */; };
+		893ACE6EE2F04F80BFE6287A /* gtest-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2C36C023D5FE4F2596CA827F /* gtest-all.cc */; };
+		9D46C402D6AA448EA5D79BD7 /* gtest-filepath.cc in Sources */ = {isa = PBXBuildFile; fileRef = AFB9B6EF56FC47A9A3BDCE48 /* gtest-filepath.cc */; };
+		A52157FF8F6340DB9A3D6054 /* gtest-counter-factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78CE4151BC294FC7AECB8541 /* gtest-counter-factory.cpp */; };
+		AB6D0376452245A6944961AB /* gtest-typed-test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 082EC52B7744430E8F359E68 /* gtest-typed-test.cc */; };
+		BD423A2329EF454AA250CFDE /* gtest-test-part.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7AAEFB55FE08492787D54650 /* gtest-test-part.cc */; };
+		BE1ED87AD4B04833864316A5 /* gtest-printers.cc in Sources */ = {isa = PBXBuildFile; fileRef = AA19BEB7EFF74CA28386FCB1 /* gtest-printers.cc */; };
+		D22A94B9CA814F80A0FFE25D /* Decrementor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E88B71490DA04CC98504A006 /* Decrementor.cpp */; };
+		D3A46824315D448DAF6FED0E /* gmock-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = A7824D02E5194920929CEE9C /* gmock-all.cc */; };
+		D94313B8A9204BBA8F6FEC4B /* gtest.cc in Sources */ = {isa = PBXBuildFile; fileRef = 812E31371F224FC6AFCC9556 /* gtest.cc */; };
+		E5646BCB09314F21A283AF86 /* gtest-incrementor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23D4105B78F541ABACBB5B8B /* gtest-incrementor.cpp */; };
+		F8D5B90FFCED454A9486B6C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE6340E78D452487BFF1F8 /* main.cpp */; };
+		F9D153EC1E1541B980FDDA25 /* gtest-port.cc in Sources */ = {isa = PBXBuildFile; fileRef = B957134CEE43431FBFD131F7 /* gtest-port.cc */; };
+		FF46F08B20594C4B8300EC43 /* IObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E804AED8D4ACAAA5A6FAA /* IObject.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		031D67EC455244159CA2BB36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4427E3424AF41EC8CBB247D;
+			remoteInfo = counters;
+		};
+		05070A2EF12D4327929C6B26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4427E3424AF41EC8CBB247D;
+			remoteInfo = counters;
+		};
+		07E3DDE9A7B5488B914A6972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		0EA766AA052C43D799CC13E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808601070C2746E48E818B09;
+			remoteInfo = object;
+		};
+		15132792A49144B0B45E58F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E61CFC95E6B43EEBEBFBC6F;
+			remoteInfo = decrementor;
+		};
+		1C318F73F458400BB0C45EBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA22EF1B19A640A98802A5ED;
+			remoteInfo = incrementor;
+		};
+		1F23A336104A4C1BADBCAD00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA22EF1B19A640A98802A5ED;
+			remoteInfo = incrementor;
+		};
+		20754F88B99D46D7AB9B4FC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808601070C2746E48E818B09;
+			remoteInfo = object;
+		};
+		2353BE599CFF41A79A1431E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 535F7F95471C4CB8B43C7352;
+			remoteInfo = gtest;
+		};
+		244FF68F9D7A4ABAB3B86DC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808601070C2746E48E818B09;
+			remoteInfo = object;
+		};
+		2E19F8E970E6425DAB72CD02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4427E3424AF41EC8CBB247D;
+			remoteInfo = counters;
+		};
+		2E65100FC6ED437391BD38F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808601070C2746E48E818B09;
+			remoteInfo = object;
+		};
+		315E1D1AB72948EA8B4DF12B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808601070C2746E48E818B09;
+			remoteInfo = object;
+		};
+		38CA102EFF9C469BAE2DFF17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 535F7F95471C4CB8B43C7352;
+			remoteInfo = gtest;
+		};
+		3B7BEB1BFA2C487A960C38C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 535F7F95471C4CB8B43C7352;
+			remoteInfo = gtest;
+		};
+		3C05DECA578E4D16836307C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		3D71F03B591F46E9AE9DC44C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808601070C2746E48E818B09;
+			remoteInfo = object;
+		};
+		3E9CCF5BB9A5432EBFC035AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4427E3424AF41EC8CBB247D;
+			remoteInfo = counters;
+		};
+		4100E7616B2949A39494D163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27A9E569F56A4471954B3715;
+			remoteInfo = "gtest-object";
+		};
+		4AC46778EF9348BA888C63BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		4B00A96DE29B49878D81D028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 535F7F95471C4CB8B43C7352;
+			remoteInfo = gtest;
+		};
+		50C8339564EB4FF099E592B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 535F7F95471C4CB8B43C7352;
+			remoteInfo = gtest;
+		};
+		52794F2E001E446089023A42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9F8BDD1FFE2446687DE8006;
+			remoteInfo = "gtest-decrementor";
+		};
+		67EA603B44314DCA89E5408F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 535F7F95471C4CB8B43C7352;
+			remoteInfo = gtest;
+		};
+		6BA682BAF46445D793BF8A47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		79C55D47B2FA4EF1B9E57C96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEBB614F96A0481BBFD0794B;
+			remoteInfo = gmock;
+		};
+		80088E41F7FF42159E757C0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		820C050A70F345E7A7A14A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4427E3424AF41EC8CBB247D;
+			remoteInfo = counters;
+		};
+		890FD51C839440B7B5479848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FC45479DE184D0FB57078EA;
+			remoteInfo = application;
+		};
+		8ABF373CC6A24C82A4F04FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		A0791C4545E141DE8ED4934B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808601070C2746E48E818B09;
+			remoteInfo = object;
+		};
+		A09A3316FA13444B85B78DFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		AFB9102C39A4456896AEDCE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		C61B76B0476F4439A1226918 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		CCCE83D49D1A488A92CBCFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		D3C61149DD7441549D62D3AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE4E9E431F6149B992C33B65;
+			remoteInfo = "gtest-counter";
+		};
+		DD012CFAE9CD42309104286E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		DD948DA9F93942A2961CCCB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		E6D5E22C8C09439081100B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E61CFC95E6B43EEBEBFBC6F;
+			remoteInfo = decrementor;
+		};
+		E70D6AF1F8A04A4A80BBD30D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9547B1523FD420786A3A494;
+			remoteInfo = "gtest-incrementor";
+		};
+		E8EEBCE661C54889A80DBB2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		EF653E61A5A94F2BBCA1CCE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F05854AF958433E97A75804;
+			remoteInfo = "gtest-counter-factory";
+		};
+		F30BA36AB57F400E98BB61F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB650983074299AF3EC978;
+			remoteInfo = ZERO_CHECK;
+		};
+		FD65221C48314D6EA8A8EF4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2137F499D04D928D8E268D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4427E3424AF41EC8CBB247D;
+			remoteInfo = counters;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01B30ABFC7634F72918E5A9D /* libdecrementor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libdecrementor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		02BC75D4902B4594A685B377 /* libcounters.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcounters.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		03238CD75DAC4093A3CD2684 /* Counter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Counter.cpp; path = src/counters/Counter.cpp; sourceTree = SOURCE_ROOT; };
+		082EC52B7744430E8F359E68 /* gtest-typed-test.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-typed-test.cc"; path = "ext/src/gtest/gtest-typed-test.cc"; sourceTree = SOURCE_ROOT; };
+		0A9C1C84A6D444AE8D11FDF8 /* libobject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libobject.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D6EF101C2F54CFDBF894F3A /* gtest-decrementor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-decrementor.cpp"; path = "src/counters/Decrementor/gtest/gtest-decrementor.cpp"; sourceTree = SOURCE_ROOT; };
+		0E847D8EDE0C48609A7F1506 /* gtest-death-test.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-death-test.cc"; path = "ext/src/gtest/gtest-death-test.cc"; sourceTree = SOURCE_ROOT; };
+		1730D37D9555415FA3724CBE /* inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = inc; sourceTree = SOURCE_ROOT; };
+		1860F43C55D848AAA6F242AA /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ext/src/gtest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		23D4105B78F541ABACBB5B8B /* gtest-incrementor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-incrementor.cpp"; path = "src/counters/Incrementor/gtest/gtest-incrementor.cpp"; sourceTree = SOURCE_ROOT; };
+		2834A499D46A4474A360CE77 /* Object.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Object.cpp; path = src/object/Object.cpp; sourceTree = SOURCE_ROOT; };
+		290DDD2D417C4678BFB407BC /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2C1DD2E5480A4C83939D793B /* libgtest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgtest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C36C023D5FE4F2596CA827F /* gtest-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-all.cc"; path = "ext/src/gtest/gtest-all.cc"; sourceTree = SOURCE_ROOT; };
+		2EF87E8F94F74AFF9F07F49C /* inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = inc; sourceTree = SOURCE_ROOT; };
+		3051756F04A44EA9BDB0D860 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/counters/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		41BE4C0906CC42D6B0DDF27C /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/counters/Incrementor/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		438BB652ACBF4DD7B0456CDD /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/object/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4945CE5E3CC64F33BEE93683 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/counters/gtest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4E5E804AED8D4ACAAA5A6FAA /* IObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IObject.cpp; path = src/object/IObject.cpp; sourceTree = SOURCE_ROOT; };
+		54754A993B3743458B06FC77 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/counters/Decrementor/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		56EE728086FE4C6CA9A12CAD /* gtest-incrementor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "gtest-incrementor"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B15DA07621405784658D35 /* gtest-counter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "gtest-counter"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6890027D04D44EEA944B492E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ext/src/gmock/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6BFE6340E78D452487BFF1F8 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		73133A6A8ABD4EDFAB159DC8 /* gtest-object */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "gtest-object"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77882794A38A46D897DC710F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		78CE4151BC294FC7AECB8541 /* gtest-counter-factory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-counter-factory.cpp"; path = "src/counters/gtest/gtest-counter-factory.cpp"; sourceTree = SOURCE_ROOT; };
+		7AAEFB55FE08492787D54650 /* gtest-test-part.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-test-part.cc"; path = "ext/src/gtest/gtest-test-part.cc"; sourceTree = SOURCE_ROOT; };
+		812E31371F224FC6AFCC9556 /* gtest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gtest.cc; path = ext/src/gtest/gtest.cc; sourceTree = SOURCE_ROOT; };
+		88322B96F61649EEAD75CC7B /* libincrementor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libincrementor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9010F7F939F7403C87B5CACB /* Decrementor */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = Decrementor; path = src/counters/Decrementor; sourceTree = SOURCE_ROOT; };
+		90DCC5B4A54B4CE6BE7EB8DC /* object */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = object; path = src/object; sourceTree = SOURCE_ROOT; };
+		94E4420DB43B46F59521FF60 /* gtest-counter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-counter.cpp"; path = "src/counters/gtest/gtest-counter.cpp"; sourceTree = SOURCE_ROOT; };
+		9D614B2750274C04B8D32224 /* application */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = application; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC7BE83035940C084A46459 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/counters/gtest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A5C0BD1C4C78481CAE10472F /* counters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = counters; path = src/counters; sourceTree = SOURCE_ROOT; };
+		A7824D02E5194920929CEE9C /* gmock-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gmock-all.cc"; path = "ext/src/gmock/gmock-all.cc"; sourceTree = SOURCE_ROOT; };
+		AA19BEB7EFF74CA28386FCB1 /* gtest-printers.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-printers.cc"; path = "ext/src/gtest/gtest-printers.cc"; sourceTree = SOURCE_ROOT; };
+		AD198F95CB9D47C9ABCEF93E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		AD48EC957B8F4C35ACB48917 /* Incrementor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Incrementor.cpp; path = src/counters/Incrementor/Incrementor.cpp; sourceTree = SOURCE_ROOT; };
+		AFB9B6EF56FC47A9A3BDCE48 /* gtest-filepath.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-filepath.cc"; path = "ext/src/gtest/gtest-filepath.cc"; sourceTree = SOURCE_ROOT; };
+		B327B5D35A0544A980A93E4E /* gtest_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gtest_main.cc; path = ext/src/gtest/gtest_main.cc; sourceTree = SOURCE_ROOT; };
+		B51893D8AC964618B89DE9E2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/counters/Incrementor/gtest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B568577C3423447DA400C308 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = doc/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B957134CEE43431FBFD131F7 /* gtest-port.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-port.cc"; path = "ext/src/gtest/gtest-port.cc"; sourceTree = SOURCE_ROOT; };
+		BB483702C01349F5B63D7F21 /* gtest-counter-factory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "gtest-counter-factory"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFD1C1667E1466482439F54 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/object/gtest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BF8B6F2BB2EE4517A38D9C89 /* CounterFactory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CounterFactory.cpp; path = src/counters/CounterFactory.cpp; sourceTree = SOURCE_ROOT; };
+		C117CB24B08545489F9F570A /* libgmock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgmock.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBD8F172DF64597A041AC3A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/counters/Decrementor/gtest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CF2C891249084096A1DA7050 /* Incrementor */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = Incrementor; path = src/counters/Incrementor; sourceTree = SOURCE_ROOT; };
+		D009166CB3AB400D9C71F5CE /* gtest-object.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-object.cpp"; path = "src/object/gtest/gtest-object.cpp"; sourceTree = SOURCE_ROOT; };
+		D302099BA27545949A5266C9 /* ObjectManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjectManager.cpp; path = src/object/ObjectManager.cpp; sourceTree = SOURCE_ROOT; };
+		E0EFB50577AE4AE09455DE3A /* inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = inc; sourceTree = SOURCE_ROOT; };
+		E88B71490DA04CC98504A006 /* Decrementor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Decrementor.cpp; path = src/counters/Decrementor/Decrementor.cpp; sourceTree = SOURCE_ROOT; };
+		ED8B1FA6C7FA43B0AFD3D6A6 /* gtest-decrementor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "gtest-decrementor"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F702C0367D64498BA8F42DD7 /* inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = inc; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0F857324D7E64669B2C71424 /* gtest-incrementor */ = {
+			isa = PBXGroup;
+			children = (
+				8186860F76A74A1B8EBEBE60 /* Source Files */,
+				B51893D8AC964618B89DE9E2 /* CMakeLists.txt */,
+			);
+			name = "gtest-incrementor";
+			sourceTree = "<group>";
+		};
+		11B990F2DE59424BB4ABB85D /* incrementor */ = {
+			isa = PBXGroup;
+			children = (
+				2AE95584A07A4FA986352747 /* Source Files */,
+				1730D37D9555415FA3724CBE /* inc */,
+				CF2C891249084096A1DA7050 /* Incrementor */,
+				41BE4C0906CC42D6B0DDF27C /* CMakeLists.txt */,
+			);
+			name = incrementor;
+			sourceTree = "<group>";
+		};
+		2AE95584A07A4FA986352747 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD48EC957B8F4C35ACB48917 /* Incrementor.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		390F8B23BB954ADFB6C48269 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D6EF101C2F54CFDBF894F3A /* gtest-decrementor.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3FDD4425D499425198F26B1D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7824D02E5194920929CEE9C /* gmock-all.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		4355AEE4B1374CE38D8A3788 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				94E4420DB43B46F59521FF60 /* gtest-counter.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		45B81FB637B54800BD5AEEF3 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		460DEB37C0CE4D3389815CFF /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				68B9841ED7DF4E64B03550DA /* CMake Rules */,
+				B568577C3423447DA400C308 /* CMakeLists.txt */,
+			);
+			name = doc;
+			sourceTree = "<group>";
+		};
+		516627AF7FD447E68A398579 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E88B71490DA04CC98504A006 /* Decrementor.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		57B7C300174543399E23CCC1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E5E804AED8D4ACAAA5A6FAA /* IObject.cpp */,
+				2834A499D46A4474A360CE77 /* Object.cpp */,
+				D302099BA27545949A5266C9 /* ObjectManager.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5BA9BADF0A6B4572A1FECA9E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				78CE4151BC294FC7AECB8541 /* gtest-counter-factory.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		6054D25B86474BF594CA5DED /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D009166CB3AB400D9C71F5CE /* gtest-object.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		626B30E3B8E3461087040E66 /* decrementor */ = {
+			isa = PBXGroup;
+			children = (
+				516627AF7FD447E68A398579 /* Source Files */,
+				9010F7F939F7403C87B5CACB /* Decrementor */,
+				54754A993B3743458B06FC77 /* CMakeLists.txt */,
+			);
+			name = decrementor;
+			sourceTree = "<group>";
+		};
+		63F357E2A0BD4C6E98C9348A /* object */ = {
+			isa = PBXGroup;
+			children = (
+				57B7C300174543399E23CCC1 /* Source Files */,
+				F702C0367D64498BA8F42DD7 /* inc */,
+				90DCC5B4A54B4CE6BE7EB8DC /* object */,
+				438BB652ACBF4DD7B0456CDD /* CMakeLists.txt */,
+			);
+			name = object;
+			sourceTree = "<group>";
+		};
+		664C76FAA43B4B2BA36A6519 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				03238CD75DAC4093A3CD2684 /* Counter.cpp */,
+				BF8B6F2BB2EE4517A38D9C89 /* CounterFactory.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		68B9841ED7DF4E64B03550DA /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6B864BB657B2490F850B26D6 /* gtest-decrementor */ = {
+			isa = PBXGroup;
+			children = (
+				390F8B23BB954ADFB6C48269 /* Source Files */,
+				CBBD8F172DF64597A041AC3A /* CMakeLists.txt */,
+			);
+			name = "gtest-decrementor";
+			sourceTree = "<group>";
+		};
+		6E6247377D80485AB403B00F = {
+			isa = PBXGroup;
+			children = (
+				D7C5485FCC3145B19B7E3A00 /* application */,
+				A30FC14F4A0646E9B42A0FDF /* ALL_BUILD */,
+				C61A12FC4CF04E40AF438C0B /* ZERO_CHECK */,
+				63F357E2A0BD4C6E98C9348A /* object */,
+				E7B21F1C821C46D7880E5941 /* gtest-object */,
+				78326742213E4A12B31E565C /* counters */,
+				11B990F2DE59424BB4ABB85D /* incrementor */,
+				0F857324D7E64669B2C71424 /* gtest-incrementor */,
+				626B30E3B8E3461087040E66 /* decrementor */,
+				6B864BB657B2490F850B26D6 /* gtest-decrementor */,
+				B8A45746E99F4B20A42004CF /* gtest-counter-factory */,
+				862E663EF7E04BE09646C554 /* gtest-counter */,
+				460DEB37C0CE4D3389815CFF /* doc */,
+				FE2C579824AD4D5FB7AAC5BF /* gtest */,
+				A52616252D0F4EE7BEC31A27 /* gmock */,
+				B4E207D001FC49E7A77F0DD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78326742213E4A12B31E565C /* counters */ = {
+			isa = PBXGroup;
+			children = (
+				664C76FAA43B4B2BA36A6519 /* Source Files */,
+				2EF87E8F94F74AFF9F07F49C /* inc */,
+				A5C0BD1C4C78481CAE10472F /* counters */,
+				3051756F04A44EA9BDB0D860 /* CMakeLists.txt */,
+			);
+			name = counters;
+			sourceTree = "<group>";
+		};
+		8186860F76A74A1B8EBEBE60 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				23D4105B78F541ABACBB5B8B /* gtest-incrementor.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		862E663EF7E04BE09646C554 /* gtest-counter */ = {
+			isa = PBXGroup;
+			children = (
+				4355AEE4B1374CE38D8A3788 /* Source Files */,
+				4945CE5E3CC64F33BEE93683 /* CMakeLists.txt */,
+			);
+			name = "gtest-counter";
+			sourceTree = "<group>";
+		};
+		A16AB790334C417EA2E4755E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BFE6340E78D452487BFF1F8 /* main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A30FC14F4A0646E9B42A0FDF /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				AEE8EEC6707A4287907C3A32 /* CMake Rules */,
+				290DDD2D417C4678BFB407BC /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		A52616252D0F4EE7BEC31A27 /* gmock */ = {
+			isa = PBXGroup;
+			children = (
+				3FDD4425D499425198F26B1D /* Source Files */,
+				6890027D04D44EEA944B492E /* CMakeLists.txt */,
+			);
+			name = gmock;
+			sourceTree = "<group>";
+		};
+		AEE8EEC6707A4287907C3A32 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B4E207D001FC49E7A77F0DD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D614B2750274C04B8D32224 /* application */,
+				0A9C1C84A6D444AE8D11FDF8 /* libobject.a */,
+				73133A6A8ABD4EDFAB159DC8 /* gtest-object */,
+				02BC75D4902B4594A685B377 /* libcounters.a */,
+				88322B96F61649EEAD75CC7B /* libincrementor.a */,
+				56EE728086FE4C6CA9A12CAD /* gtest-incrementor */,
+				01B30ABFC7634F72918E5A9D /* libdecrementor.a */,
+				ED8B1FA6C7FA43B0AFD3D6A6 /* gtest-decrementor */,
+				60B15DA07621405784658D35 /* gtest-counter */,
+				BB483702C01349F5B63D7F21 /* gtest-counter-factory */,
+				2C1DD2E5480A4C83939D793B /* libgtest.a */,
+				C117CB24B08545489F9F570A /* libgmock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8A45746E99F4B20A42004CF /* gtest-counter-factory */ = {
+			isa = PBXGroup;
+			children = (
+				5BA9BADF0A6B4572A1FECA9E /* Source Files */,
+				9DC7BE83035940C084A46459 /* CMakeLists.txt */,
+			);
+			name = "gtest-counter-factory";
+			sourceTree = "<group>";
+		};
+		BD9E4F246ADD455EA0ED272D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C36C023D5FE4F2596CA827F /* gtest-all.cc */,
+				0E847D8EDE0C48609A7F1506 /* gtest-death-test.cc */,
+				AFB9B6EF56FC47A9A3BDCE48 /* gtest-filepath.cc */,
+				B957134CEE43431FBFD131F7 /* gtest-port.cc */,
+				AA19BEB7EFF74CA28386FCB1 /* gtest-printers.cc */,
+				7AAEFB55FE08492787D54650 /* gtest-test-part.cc */,
+				082EC52B7744430E8F359E68 /* gtest-typed-test.cc */,
+				812E31371F224FC6AFCC9556 /* gtest.cc */,
+				B327B5D35A0544A980A93E4E /* gtest_main.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C61A12FC4CF04E40AF438C0B /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				45B81FB637B54800BD5AEEF3 /* CMake Rules */,
+				77882794A38A46D897DC710F /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		D7C5485FCC3145B19B7E3A00 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				A16AB790334C417EA2E4755E /* Source Files */,
+				AD198F95CB9D47C9ABCEF93E /* CMakeLists.txt */,
+				E0EFB50577AE4AE09455DE3A /* inc */,
+			);
+			name = application;
+			sourceTree = "<group>";
+		};
+		E7B21F1C821C46D7880E5941 /* gtest-object */ = {
+			isa = PBXGroup;
+			children = (
+				6054D25B86474BF594CA5DED /* Source Files */,
+				BCFD1C1667E1466482439F54 /* CMakeLists.txt */,
+			);
+			name = "gtest-object";
+			sourceTree = "<group>";
+		};
+		FE2C579824AD4D5FB7AAC5BF /* gtest */ = {
+			isa = PBXGroup;
+			children = (
+				BD9E4F246ADD455EA0ED272D /* Source Files */,
+				1860F43C55D848AAA6F242AA /* CMakeLists.txt */,
+			);
+			name = gtest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27A9E569F56A4471954B3715 /* gtest-object */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB40380B0864E309903ECBB /* Build configuration list for PBXNativeTarget "gtest-object" */;
+			buildPhases = (
+				4603B2CBC1F149E7925BAE4B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61364E464E3F4DE084A0AE54 /* PBXTargetDependency */,
+				FE59A097F64A4E6588141C86 /* PBXTargetDependency */,
+				1A3A08D56C0146E6B8CA89CE /* PBXTargetDependency */,
+			);
+			name = "gtest-object";
+			productName = "gtest-object";
+			productReference = 73133A6A8ABD4EDFAB159DC8 /* gtest-object */;
+			productType = "com.apple.product-type.tool";
+		};
+		3E61CFC95E6B43EEBEBFBC6F /* decrementor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B592036D61C84DBF9105FFB5 /* Build configuration list for PBXNativeTarget "decrementor" */;
+			buildPhases = (
+				E466633F63C848688CABA82A /* Sources */,
+				B844D39C75254E1ABAFBE9E8 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16CD4A89DAE94C14B11ABB86 /* PBXTargetDependency */,
+			);
+			name = decrementor;
+			productName = decrementor;
+			productReference = 01B30ABFC7634F72918E5A9D /* libdecrementor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		535F7F95471C4CB8B43C7352 /* gtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA96F3205A314EEF8BAAF86A /* Build configuration list for PBXNativeTarget "gtest" */;
+			buildPhases = (
+				4ED38C811D92424CAF6C4F75 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70CA998537AE415E998724F2 /* PBXTargetDependency */,
+			);
+			name = gtest;
+			productName = gtest;
+			productReference = 2C1DD2E5480A4C83939D793B /* libgtest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		808601070C2746E48E818B09 /* object */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8205F5405B0B47E28D99BA9A /* Build configuration list for PBXNativeTarget "object" */;
+			buildPhases = (
+				A188798639A244609D1813B0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B67CCA60CF04DAA85D0B3D8 /* PBXTargetDependency */,
+			);
+			name = object;
+			productName = object;
+			productReference = 0A9C1C84A6D444AE8D11FDF8 /* libobject.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9F05854AF958433E97A75804 /* gtest-counter-factory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0846EDAB79BA4A50BCA1B694 /* Build configuration list for PBXNativeTarget "gtest-counter-factory" */;
+			buildPhases = (
+				6AA98C43C2C949CC8F104124 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				141480BA81D6481496DF51F3 /* PBXTargetDependency */,
+				104EFB9876864844BD9D2737 /* PBXTargetDependency */,
+				B064A46F27A44E33AEE06CB2 /* PBXTargetDependency */,
+				77A7E505C2DD48FE8FA5FA72 /* PBXTargetDependency */,
+			);
+			name = "gtest-counter-factory";
+			productName = "gtest-counter-factory";
+			productReference = BB483702C01349F5B63D7F21 /* gtest-counter-factory */;
+			productType = "com.apple.product-type.tool";
+		};
+		9FC45479DE184D0FB57078EA /* application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D3084F1EFAA4F909A82738C /* Build configuration list for PBXNativeTarget "application" */;
+			buildPhases = (
+				60D6E0ED06E541448BD85B5F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DEC6F84C56346C8AE203CF6 /* PBXTargetDependency */,
+				C373F3289ACF4C67AAF5C995 /* PBXTargetDependency */,
+				B4D492D44D07464098894084 /* PBXTargetDependency */,
+			);
+			name = application;
+			productName = application;
+			productReference = 9D614B2750274C04B8D32224 /* application */;
+			productType = "com.apple.product-type.tool";
+		};
+		A4427E3424AF41EC8CBB247D /* counters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3195E01B6DA4283BD47E38C /* Build configuration list for PBXNativeTarget "counters" */;
+			buildPhases = (
+				4B8AA81F4B22447588BA30C7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67DE7161FB6143D18B84B2D0 /* PBXTargetDependency */,
+				58C7653E268A48F5AEB08DFC /* PBXTargetDependency */,
+				63AC9AA46E4B4519A7E1146F /* PBXTargetDependency */,
+			);
+			name = counters;
+			productName = counters;
+			productReference = 02BC75D4902B4594A685B377 /* libcounters.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AE4E9E431F6149B992C33B65 /* gtest-counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B01ED4A001B14CA092C81C74 /* Build configuration list for PBXNativeTarget "gtest-counter" */;
+			buildPhases = (
+				9288AB9D2BD344F684058679 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2702A08649334E99B16D6746 /* PBXTargetDependency */,
+				6D5C8C2758624CF281EB3DB5 /* PBXTargetDependency */,
+				3AB22755640F4536B133D8F7 /* PBXTargetDependency */,
+				0E5A1238B1884A3C82974BED /* PBXTargetDependency */,
+			);
+			name = "gtest-counter";
+			productName = "gtest-counter";
+			productReference = 60B15DA07621405784658D35 /* gtest-counter */;
+			productType = "com.apple.product-type.tool";
+		};
+		C9547B1523FD420786A3A494 /* gtest-incrementor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC0EEEA0A734929B08FD658 /* Build configuration list for PBXNativeTarget "gtest-incrementor" */;
+			buildPhases = (
+				DCD1448E9B7D4044B3F95CA4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AD54F5B751947F59AA5CB5D /* PBXTargetDependency */,
+				3EB83136D9FF42A0B2EF0572 /* PBXTargetDependency */,
+				6A5E4ED5F7AB4E8CBFC803E5 /* PBXTargetDependency */,
+				FDF4937094E94C7595D2A966 /* PBXTargetDependency */,
+			);
+			name = "gtest-incrementor";
+			productName = "gtest-incrementor";
+			productReference = 56EE728086FE4C6CA9A12CAD /* gtest-incrementor */;
+			productType = "com.apple.product-type.tool";
+		};
+		D9F8BDD1FFE2446687DE8006 /* gtest-decrementor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D0774774714A58883A6C7E /* Build configuration list for PBXNativeTarget "gtest-decrementor" */;
+			buildPhases = (
+				D68D606164DE4FBB94BE762F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				205128BC3113483AAE455093 /* PBXTargetDependency */,
+				F87F495FDB9F4B48922DAC72 /* PBXTargetDependency */,
+				59F0815943BF4136AA8B7F07 /* PBXTargetDependency */,
+				9E720E9CDB74407B957CC28D /* PBXTargetDependency */,
+			);
+			name = "gtest-decrementor";
+			productName = "gtest-decrementor";
+			productReference = ED8B1FA6C7FA43B0AFD3D6A6 /* gtest-decrementor */;
+			productType = "com.apple.product-type.tool";
+		};
+		DEBB614F96A0481BBFD0794B /* gmock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19A6F24A284541BFB826F7F9 /* Build configuration list for PBXNativeTarget "gmock" */;
+			buildPhases = (
+				D269BD8A33A74C038D55CF0B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				336A98D87DF34ECC9FF95C55 /* PBXTargetDependency */,
+			);
+			name = gmock;
+			productName = gmock;
+			productReference = C117CB24B08545489F9F570A /* libgmock.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EA22EF1B19A640A98802A5ED /* incrementor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B20A61D2C1A43DCB1406CC8 /* Build configuration list for PBXNativeTarget "incrementor" */;
+			buildPhases = (
+				1127C4DD63A049018A4223F1 /* Sources */,
+				5468BB9EA4914B5B821ED81C /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FCF62CF631B4793B64C42D0 /* PBXTargetDependency */,
+			);
+			name = incrementor;
+			productName = incrementor;
+			productReference = 88322B96F61649EEAD75CC7B /* libincrementor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F2137F499D04D928D8E268D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 51748C29A16C4F5EA0E79589 /* Build configuration list for PBXProject "Application" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6E6247377D80485AB403B00F;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				0A27ECA6378D4FA4ABDE3426 /* ALL_BUILD */,
+				70511C1B703C4DA9BC4CBCB4 /* RUN_TESTS */,
+				9CFB650983074299AF3EC978 /* ZERO_CHECK */,
+				9FC45479DE184D0FB57078EA /* application */,
+				808601070C2746E48E818B09 /* object */,
+				27A9E569F56A4471954B3715 /* gtest-object */,
+				A4427E3424AF41EC8CBB247D /* counters */,
+				EA22EF1B19A640A98802A5ED /* incrementor */,
+				C9547B1523FD420786A3A494 /* gtest-incrementor */,
+				3E61CFC95E6B43EEBEBFBC6F /* decrementor */,
+				D9F8BDD1FFE2446687DE8006 /* gtest-decrementor */,
+				AE4E9E431F6149B992C33B65 /* gtest-counter */,
+				9F05854AF958433E97A75804 /* gtest-counter-factory */,
+				7E62DEA4DBDE4383A977A189 /* doc */,
+				535F7F95471C4CB8B43C7352 /* gtest */,
+				DEBB614F96A0481BBFD0794B /* gmock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1143970DF8504FC5B2F597BF /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/rsalm/Projects/Ivina/build/doc -f /Users/rsalm/Projects/Ivina/build/doc/CMakeScripts/doc_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		38B44120A6C249DFB57CF19C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/rsalm/Projects/Ivina/build -f /Users/rsalm/Projects/Ivina/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		5468BB9EA4914B5B821ED81C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor -f /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/CMakeScripts/incrementor_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		60A71C0905D6412A9949B289 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/rsalm/Projects/Ivina/build -f /Users/rsalm/Projects/Ivina/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		B844D39C75254E1ABAFBE9E8 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor -f /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/CMakeScripts/decrementor_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		EB31CF14B02C4838B37A4EF4 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/rsalm/Projects/Ivina/build -f /Users/rsalm/Projects/Ivina/build/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1127C4DD63A049018A4223F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773DA9748D8A4877A449F873 /* Incrementor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4603B2CBC1F149E7925BAE4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FF1BB2B0DC435E9EC8F6A6 /* gtest-object.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B8AA81F4B22447588BA30C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409905253E064588B51421EA /* Counter.cpp in Sources */,
+				67E216B1BD5B4426A4D0DEC0 /* CounterFactory.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED38C811D92424CAF6C4F75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				893ACE6EE2F04F80BFE6287A /* gtest-all.cc in Sources */,
+				837E1D56E80D493BA3C80E9F /* gtest-death-test.cc in Sources */,
+				9D46C402D6AA448EA5D79BD7 /* gtest-filepath.cc in Sources */,
+				F9D153EC1E1541B980FDDA25 /* gtest-port.cc in Sources */,
+				BE1ED87AD4B04833864316A5 /* gtest-printers.cc in Sources */,
+				BD423A2329EF454AA250CFDE /* gtest-test-part.cc in Sources */,
+				AB6D0376452245A6944961AB /* gtest-typed-test.cc in Sources */,
+				D94313B8A9204BBA8F6FEC4B /* gtest.cc in Sources */,
+				15351A031C43485799A3442C /* gtest_main.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60D6E0ED06E541448BD85B5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D5B90FFCED454A9486B6C7 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AA98C43C2C949CC8F104124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52157FF8F6340DB9A3D6054 /* gtest-counter-factory.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9288AB9D2BD344F684058679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717ACAF136554232A8DDF587 /* gtest-counter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A188798639A244609D1813B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF46F08B20594C4B8300EC43 /* IObject.cpp in Sources */,
+				51D3423E05F54B70A0E79F3D /* Object.cpp in Sources */,
+				3EBEE13ABA8D408BBE03AFC7 /* ObjectManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D269BD8A33A74C038D55CF0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A46824315D448DAF6FED0E /* gmock-all.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68D606164DE4FBB94BE762F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81864383532640F7A79FC0B9 /* gtest-decrementor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD1448E9B7D4044B3F95CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5646BCB09314F21A283AF86 /* gtest-incrementor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E466633F63C848688CABA82A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D22A94B9CA814F80A0FFE25D /* Decrementor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E5A1238B1884A3C82974BED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = F30BA36AB57F400E98BB61F9 /* PBXContainerItemProxy */;
+		};
+		104EFB9876864844BD9D2737 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4427E3424AF41EC8CBB247D /* counters */;
+			targetProxy = 031D67EC455244159CA2BB36 /* PBXContainerItemProxy */;
+		};
+		141480BA81D6481496DF51F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808601070C2746E48E818B09 /* object */;
+			targetProxy = 3D71F03B591F46E9AE9DC44C /* PBXContainerItemProxy */;
+		};
+		162A5A4F8CDC4F9FA032099C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FC45479DE184D0FB57078EA /* application */;
+			targetProxy = 890FD51C839440B7B5479848 /* PBXContainerItemProxy */;
+		};
+		16CD4A89DAE94C14B11ABB86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = E8EEBCE661C54889A80DBB2F /* PBXContainerItemProxy */;
+		};
+		1A3A08D56C0146E6B8CA89CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = 3C05DECA578E4D16836307C8 /* PBXContainerItemProxy */;
+		};
+		205128BC3113483AAE455093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808601070C2746E48E818B09 /* object */;
+			targetProxy = 244FF68F9D7A4ABAB3B86DC4 /* PBXContainerItemProxy */;
+		};
+		2702A08649334E99B16D6746 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808601070C2746E48E818B09 /* object */;
+			targetProxy = 2E65100FC6ED437391BD38F8 /* PBXContainerItemProxy */;
+		};
+		3255A7E51EC24E2CBE4482B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9547B1523FD420786A3A494 /* gtest-incrementor */;
+			targetProxy = E70D6AF1F8A04A4A80BBD30D /* PBXContainerItemProxy */;
+		};
+		336A98D87DF34ECC9FF95C55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = C61B76B0476F4439A1226918 /* PBXContainerItemProxy */;
+		};
+		3AB22755640F4536B133D8F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 535F7F95471C4CB8B43C7352 /* gtest */;
+			targetProxy = 4B00A96DE29B49878D81D028 /* PBXContainerItemProxy */;
+		};
+		3EB83136D9FF42A0B2EF0572 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4427E3424AF41EC8CBB247D /* counters */;
+			targetProxy = 820C050A70F345E7A7A14A54 /* PBXContainerItemProxy */;
+		};
+		4735A902F82D4F9A91F59F20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9F8BDD1FFE2446687DE8006 /* gtest-decrementor */;
+			targetProxy = 52794F2E001E446089023A42 /* PBXContainerItemProxy */;
+		};
+		4A1EAFF990304AF0AFC8F8DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = CCCE83D49D1A488A92CBCFDF /* PBXContainerItemProxy */;
+		};
+		4B67CCA60CF04DAA85D0B3D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = 4AC46778EF9348BA888C63BD /* PBXContainerItemProxy */;
+		};
+		58C7653E268A48F5AEB08DFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E61CFC95E6B43EEBEBFBC6F /* decrementor */;
+			targetProxy = E6D5E22C8C09439081100B76 /* PBXContainerItemProxy */;
+		};
+		59F0815943BF4136AA8B7F07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 535F7F95471C4CB8B43C7352 /* gtest */;
+			targetProxy = 67EA603B44314DCA89E5408F /* PBXContainerItemProxy */;
+		};
+		61364E464E3F4DE084A0AE54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808601070C2746E48E818B09 /* object */;
+			targetProxy = 0EA766AA052C43D799CC13E0 /* PBXContainerItemProxy */;
+		};
+		63AC9AA46E4B4519A7E1146F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = 07E3DDE9A7B5488B914A6972 /* PBXContainerItemProxy */;
+		};
+		67DE7161FB6143D18B84B2D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA22EF1B19A640A98802A5ED /* incrementor */;
+			targetProxy = 1F23A336104A4C1BADBCAD00 /* PBXContainerItemProxy */;
+		};
+		695B219791EA4909A2F155A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4427E3424AF41EC8CBB247D /* counters */;
+			targetProxy = 05070A2EF12D4327929C6B26 /* PBXContainerItemProxy */;
+		};
+		6A5E4ED5F7AB4E8CBFC803E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 535F7F95471C4CB8B43C7352 /* gtest */;
+			targetProxy = 50C8339564EB4FF099E592B5 /* PBXContainerItemProxy */;
+		};
+		6D5C8C2758624CF281EB3DB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4427E3424AF41EC8CBB247D /* counters */;
+			targetProxy = 3E9CCF5BB9A5432EBFC035AD /* PBXContainerItemProxy */;
+		};
+		70CA998537AE415E998724F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = AFB9102C39A4456896AEDCE0 /* PBXContainerItemProxy */;
+		};
+		77A7E505C2DD48FE8FA5FA72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = DD948DA9F93942A2961CCCB9 /* PBXContainerItemProxy */;
+		};
+		7AD54F5B751947F59AA5CB5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808601070C2746E48E818B09 /* object */;
+			targetProxy = 315E1D1AB72948EA8B4DF12B /* PBXContainerItemProxy */;
+		};
+		7DEC6F84C56346C8AE203CF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808601070C2746E48E818B09 /* object */;
+			targetProxy = A0791C4545E141DE8ED4934B /* PBXContainerItemProxy */;
+		};
+		81A0C5E81FE94A3F8F851F51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F05854AF958433E97A75804 /* gtest-counter-factory */;
+			targetProxy = EF653E61A5A94F2BBCA1CCE4 /* PBXContainerItemProxy */;
+		};
+		81E07D4DD5794D6E82A3E9B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEBB614F96A0481BBFD0794B /* gmock */;
+			targetProxy = 79C55D47B2FA4EF1B9E57C96 /* PBXContainerItemProxy */;
+		};
+		91359F15C20B41F29C867595 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = 80088E41F7FF42159E757C0C /* PBXContainerItemProxy */;
+		};
+		914207B555D442C48C0A878D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 535F7F95471C4CB8B43C7352 /* gtest */;
+			targetProxy = 38CA102EFF9C469BAE2DFF17 /* PBXContainerItemProxy */;
+		};
+		93F95DCDEEC942F69D934420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE4E9E431F6149B992C33B65 /* gtest-counter */;
+			targetProxy = D3C61149DD7441549D62D3AD /* PBXContainerItemProxy */;
+		};
+		9E720E9CDB74407B957CC28D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = 8ABF373CC6A24C82A4F04FBE /* PBXContainerItemProxy */;
+		};
+		9FCF62CF631B4793B64C42D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = DD012CFAE9CD42309104286E /* PBXContainerItemProxy */;
+		};
+		A583705CCD784CEBA1622CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808601070C2746E48E818B09 /* object */;
+			targetProxy = 20754F88B99D46D7AB9B4FC3 /* PBXContainerItemProxy */;
+		};
+		AE0070F7265942EAA5812218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA22EF1B19A640A98802A5ED /* incrementor */;
+			targetProxy = 1C318F73F458400BB0C45EBE /* PBXContainerItemProxy */;
+		};
+		B064A46F27A44E33AEE06CB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 535F7F95471C4CB8B43C7352 /* gtest */;
+			targetProxy = 3B7BEB1BFA2C487A960C38C3 /* PBXContainerItemProxy */;
+		};
+		B4D492D44D07464098894084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = 6BA682BAF46445D793BF8A47 /* PBXContainerItemProxy */;
+		};
+		C373F3289ACF4C67AAF5C995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4427E3424AF41EC8CBB247D /* counters */;
+			targetProxy = FD65221C48314D6EA8A8EF4E /* PBXContainerItemProxy */;
+		};
+		E7C3768070D4412F8F2F9711 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27A9E569F56A4471954B3715 /* gtest-object */;
+			targetProxy = 4100E7616B2949A39494D163 /* PBXContainerItemProxy */;
+		};
+		E80F225390C045E294BE2BF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E61CFC95E6B43EEBEBFBC6F /* decrementor */;
+			targetProxy = 15132792A49144B0B45E58F4 /* PBXContainerItemProxy */;
+		};
+		F87F495FDB9F4B48922DAC72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4427E3424AF41EC8CBB247D /* counters */;
+			targetProxy = 2E19F8E970E6425DAB72CD02 /* PBXContainerItemProxy */;
+		};
+		FDF4937094E94C7595D2A966 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB650983074299AF3EC978 /* ZERO_CHECK */;
+			targetProxy = A09A3316FA13444B85B78DFA /* PBXContainerItemProxy */;
+		};
+		FE59A097F64A4E6588141C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 535F7F95471C4CB8B43C7352 /* gtest */;
+			targetProxy = 2353BE599CFF41A79A1431E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05213C5F68A34FD6865C94F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/Debug/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/Debug/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = application;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		124FCB933B2B400694EE2531 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-counter-factory";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		13696EF8E2584F26831535EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/Debug/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/Debug/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-object";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/object/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		168AC5828EB346519551114E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/Application.build/Debug/incrementor.build/Objects-normal/";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = incrementor;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		18797696EA084E3FAC8B32D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/Debug/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/Debug/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/Debug/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-counter-factory";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		1A8BED14EB184CA09C58D8BC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		1DACC27D852542DB98BFBD8F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/decrementor.build/Objects-normal/x86_64/Decrementor.o /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/incrementor.build/Objects-normal/x86_64/Incrementor.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = counters;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		1DCB5DB0E5874904BF18DB07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/Debug/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/Debug/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/Debug/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-incrementor";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		29D7D6CB7491444AB47D85F0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/Application.build/MinSizeRel/incrementor.build/Objects-normal/";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = incrementor;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2D07E1A0E477479AB7306B0A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/build;
+			};
+			name = MinSizeRel;
+		};
+		2D67B64B36A0484FA1BEE95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/ext/src/gmock;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		3053194F66474C278E30F819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		30C45C6F32254E50AC40ACF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/build;
+			};
+			name = Release;
+		};
+		38519DC1BB7E4AE184AF20D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/build;
+			};
+			name = Debug;
+		};
+		3A73C5F4EDF0406E880C16A0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = object;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/object;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		3D44FDB587DC4C6BB65E8D20 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		3D819071367C46D9BE831A47 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/Application.build/RelWithDebInfo/incrementor.build/Objects-normal/";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = incrementor;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		50DAB782EF7C4632A4F48485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/Debug/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/Debug/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/Debug/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-counter";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		52BC8ADECF344102B45C6FB3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/doc;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		546BF0865B7D43BF9675721E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-decrementor";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		549D8D0831D649A381746AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/Application.build/Release/incrementor.build/Objects-normal/";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = incrementor;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		54F0FF9CCC0743439C6E3BD7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/ext/src/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		56B9F38FD16F4C8787B8F43A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		5A8146FAF5CB42FB84C65116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/Application.build/Debug/decrementor.build/Objects-normal/";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = decrementor;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		5A9148152B924D7F867DF455 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/doc;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		6532A0441F9146A6800EED9B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/ext/src/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		67795CCFA5724E16A48D6939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = object;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/object;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		683C4093E8434EE0B260F9D2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/Application.build/RelWithDebInfo/decrementor.build/Objects-normal/";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = decrementor;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		69BB4CE6DF02414498AF13A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/ext/src/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		728CA04C440C4D9390C41488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/doc;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		76A694608DAE42A4A001BC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/Release/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/Release/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/Release/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-counter-factory";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		78726124F0994403BAC266EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/Release/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/Release/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/Release/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-counter";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		7A3365581B9444C18F131C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		7A4E8E6DB6A34161A7E91013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/decrementor.build/Objects-normal/x86_64/Decrementor.o /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/incrementor.build/Objects-normal/x86_64/Incrementor.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = counters;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		7B62503941934B4E8A409514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		7F0099F28CE44D688C7E6FF8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		8123070D8D164B5AAD501E37 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = application;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		869192EE06A44F74863A4B72 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		8A5D277FE8BE4C64B7BAFABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		8CC32FA07CB64363BF796D30 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		9126E674E1FB47389830D61D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = object;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/object;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		96F317F8708442629C882A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/doc;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		9858E87F84334D7799965A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/Application.build/Release/decrementor.build/Objects-normal/";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = decrementor;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		9A810D3A7CC94171AA39D46C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/decrementor.build/Objects-normal/x86_64/Decrementor.o /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/incrementor.build/Objects-normal/x86_64/Incrementor.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = counters;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		9EF8A048A93F4CA09628D8E0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = application;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		A37401CC6FDB4A1BBFB9B495 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-counter";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		AAA932D25CB54E8198FA7B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/Release/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/Release/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = application;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		AE5E49CEA07F46808826F49D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/ext/src/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		AF43000CE406492EB7646506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/ext/src/gmock;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		B29713F5150D4C51BE74F6AF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		B369D920546C4C19A745C35E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = object;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/object;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		BF08D882ED434D9DB6656D31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		BF3371AFA7F440EE8238A283 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-decrementor";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		BFA41487FD1F483BBAAA4397 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/decrementor.build/Objects-normal/x86_64/Decrementor.o /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/incrementor.build/Objects-normal/x86_64/Incrementor.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = counters;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		BFA99CDF808045319F456692 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-object";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/object/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C37D31EB3EDA47078FFD3998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/Release/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/Release/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/Release/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-decrementor";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		C3CA0E3207784AEC942FCE7C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/Application.build/MinSizeRel/decrementor.build/Objects-normal/";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = decrementor;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C9842F38D793499F94AF945A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/Release/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/Release/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-object";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/object/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		D9B1991004E34C319F795034 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-incrementor";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		DCA0CC630A1F49F0A5BC4437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		DCF45174BF094597BD7388BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/Debug/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/Debug/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/Debug/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-decrementor";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Decrementor/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		E089A8B5CE6948968746ECAA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-incrementor";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		E506D34A68E14E979418F777 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-counter";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		E897F7DFE21C4F66BA461286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/Release/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/Release/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/Release/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-incrementor";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/Incrementor/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		EC63DBF9EEF2482B9C975166 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/ext/src/gmock;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		ECD1CDA5F1CA4F1BA4890A63 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/lib/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/ext/src/gmock;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		F2CF0DD0BA1A451CA66EE433 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libcounters.a,
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-counter-factory";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/counters/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		FAD9060BA8A344F8B27DF5A5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/rsalm/Projects/Ivina/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/rsalm/Projects/Ivina/inc,
+					/Users/rsalm/Projects/Ivina/ext/inc,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libgtest.a,
+					"-lpthread",
+					/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libobject.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gtest-object";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rsalm/Projects/Ivina/build/src/object/gtest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04B208456E494146B8FDDEA6 /* Build configuration list for PBXAggregateTarget "doc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F317F8708442629C882A8F /* Debug */,
+				728CA04C440C4D9390C41488 /* Release */,
+				5A9148152B924D7F867DF455 /* MinSizeRel */,
+				52BC8ADECF344102B45C6FB3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0846EDAB79BA4A50BCA1B694 /* Build configuration list for PBXNativeTarget "gtest-counter-factory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18797696EA084E3FAC8B32D2 /* Debug */,
+				76A694608DAE42A4A001BC75 /* Release */,
+				124FCB933B2B400694EE2531 /* MinSizeRel */,
+				F2CF0DD0BA1A451CA66EE433 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		19A6F24A284541BFB826F7F9 /* Build configuration list for PBXNativeTarget "gmock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF43000CE406492EB7646506 /* Debug */,
+				2D67B64B36A0484FA1BEE95A /* Release */,
+				ECD1CDA5F1CA4F1BA4890A63 /* MinSizeRel */,
+				EC63DBF9EEF2482B9C975166 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1FB40380B0864E309903ECBB /* Build configuration list for PBXNativeTarget "gtest-object" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13696EF8E2584F26831535EB /* Debug */,
+				C9842F38D793499F94AF945A /* Release */,
+				BFA99CDF808045319F456692 /* MinSizeRel */,
+				FAD9060BA8A344F8B27DF5A5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		32D0774774714A58883A6C7E /* Build configuration list for PBXNativeTarget "gtest-decrementor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF45174BF094597BD7388BE /* Debug */,
+				C37D31EB3EDA47078FFD3998 /* Release */,
+				546BF0865B7D43BF9675721E /* MinSizeRel */,
+				BF3371AFA7F440EE8238A283 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3601D7CBF52F43849DE1209D /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF08D882ED434D9DB6656D31 /* Debug */,
+				8A5D277FE8BE4C64B7BAFABD /* Release */,
+				869192EE06A44F74863A4B72 /* MinSizeRel */,
+				56B9F38FD16F4C8787B8F43A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3D3084F1EFAA4F909A82738C /* Build configuration list for PBXNativeTarget "application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05213C5F68A34FD6865C94F5 /* Debug */,
+				AAA932D25CB54E8198FA7B66 /* Release */,
+				9EF8A048A93F4CA09628D8E0 /* MinSizeRel */,
+				8123070D8D164B5AAD501E37 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		51748C29A16C4F5EA0E79589 /* Build configuration list for PBXProject "Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38519DC1BB7E4AE184AF20D7 /* Debug */,
+				30C45C6F32254E50AC40ACF3 /* Release */,
+				2D07E1A0E477479AB7306B0A /* MinSizeRel */,
+				1A8BED14EB184CA09C58D8BC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7B20A61D2C1A43DCB1406CC8 /* Build configuration list for PBXNativeTarget "incrementor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				168AC5828EB346519551114E /* Debug */,
+				549D8D0831D649A381746AF9 /* Release */,
+				29D7D6CB7491444AB47D85F0 /* MinSizeRel */,
+				3D819071367C46D9BE831A47 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8205F5405B0B47E28D99BA9A /* Build configuration list for PBXNativeTarget "object" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67795CCFA5724E16A48D6939 /* Debug */,
+				B369D920546C4C19A745C35E /* Release */,
+				9126E674E1FB47389830D61D /* MinSizeRel */,
+				3A73C5F4EDF0406E880C16A0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		917CD266040545E6933E84E0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3053194F66474C278E30F819 /* Debug */,
+				7A3365581B9444C18F131C8C /* Release */,
+				7F0099F28CE44D688C7E6FF8 /* MinSizeRel */,
+				3D44FDB587DC4C6BB65E8D20 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AA96F3205A314EEF8BAAF86A /* Build configuration list for PBXNativeTarget "gtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69BB4CE6DF02414498AF13A7 /* Debug */,
+				AE5E49CEA07F46808826F49D /* Release */,
+				54F0FF9CCC0743439C6E3BD7 /* MinSizeRel */,
+				6532A0441F9146A6800EED9B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B01ED4A001B14CA092C81C74 /* Build configuration list for PBXNativeTarget "gtest-counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DAB782EF7C4632A4F48485 /* Debug */,
+				78726124F0994403BAC266EA /* Release */,
+				A37401CC6FDB4A1BBFB9B495 /* MinSizeRel */,
+				E506D34A68E14E979418F777 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B592036D61C84DBF9105FFB5 /* Build configuration list for PBXNativeTarget "decrementor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A8146FAF5CB42FB84C65116 /* Debug */,
+				9858E87F84334D7799965A51 /* Release */,
+				C3CA0E3207784AEC942FCE7C /* MinSizeRel */,
+				683C4093E8434EE0B260F9D2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D16AEF3BD96D4C4CAA4E7049 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B62503941934B4E8A409514 /* Debug */,
+				DCA0CC630A1F49F0A5BC4437 /* Release */,
+				B29713F5150D4C51BE74F6AF /* MinSizeRel */,
+				8CC32FA07CB64363BF796D30 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E3195E01B6DA4283BD47E38C /* Build configuration list for PBXNativeTarget "counters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A810D3A7CC94171AA39D46C /* Debug */,
+				7A4E8E6DB6A34161A7E91013 /* Release */,
+				1DACC27D852542DB98BFBD8F /* MinSizeRel */,
+				BFA41487FD1F483BBAAA4397 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ECC0EEEA0A734929B08FD658 /* Build configuration list for PBXNativeTarget "gtest-incrementor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DCB5DB0E5874904BF18DB07 /* Debug */,
+				E897F7DFE21C4F66BA461286 /* Release */,
+				E089A8B5CE6948968746ECAA /* MinSizeRel */,
+				D9B1991004E34C319F795034 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F2137F499D04D928D8E268D /* Project object */;
+}

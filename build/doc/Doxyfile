@@ -1,0 +1,13 @@
+PROJECT_NAME           = "Application"
+PROJECT_NUMBER         = ..
+STRIP_FROM_PATH        = /Users/rsalm/Projects/Ivina \
+                         /Users/rsalm/Projects/Ivina/build
+INPUT                  =  \
+                         /Users/rsalm/Projects/Ivina \
+                         /Users/rsalm/Projects/Ivina/build
+FILE_PATTERNS          = *.h \
+                         *.cc
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = 
+EXCLUDE_PATTERNS       = */gtest/* */ext/* 
+GENERATE_LATEX         = NO
