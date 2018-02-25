@@ -5,6 +5,7 @@
 /Users/rsalm/Projects/Ivina/build/src/CMakeFiles/RUN_TESTS.dir
 /Users/rsalm/Projects/Ivina/build/src/object/CMakeFiles/RUN_TESTS.dir
 /Users/rsalm/Projects/Ivina/build/src/object/CMakeFiles/object.dir
+/Users/rsalm/Projects/Ivina/build/src/object/gtest/CMakeFiles/gtest-object-manager.dir
 /Users/rsalm/Projects/Ivina/build/src/object/gtest/CMakeFiles/RUN_TESTS.dir
 /Users/rsalm/Projects/Ivina/build/src/object/gtest/CMakeFiles/gtest-object.dir
 /Users/rsalm/Projects/Ivina/build/src/counters/CMakeFiles/RUN_TESTS.dir

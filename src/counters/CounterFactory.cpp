@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string>
 
 #include "CounterFactory.h"
 
@@ -11,21 +12,25 @@ CounterFactory::CounterFactory()
 	
 }
 
-std::unique_ptr <ICounter> CounterFactory::build( CounterType type )
+std::unique_ptr <ICounter> CounterFactory::build (const std::string name)
 {
-	std::unique_ptr <ICounter> c;
-
-	switch(type)
-	{
-		case CounterType::INCREMENTOR:
-			c = std::make_unique<Incrementor>();
-			break;
-		case CounterType::DECREMENTOR:
-			c = std::make_unique<Decrementor>();
-			break;
-		default:
-			c = std::make_unique<Counter>();
-			break;
-	}
-	return c;	
+    std::unique_ptr <ICounter> c;
+ 
+    if      ( ! name.compare("Incrementor") )
+    {
+        c = std::make_unique<Incrementor>();
+    }
+    else if ( ! name.compare("Decrementor") )
+    {
+        c = std::make_unique<Decrementor>();
+    }
+    else if ( ! name.compare("Counter") )
+    {
+        c = std::make_unique<Counter>();
+    }
+    else
+    {
+        throw "Undefined Counter Name";
+    }
+    return c;
 }

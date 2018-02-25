@@ -30,6 +30,15 @@ PostBuild.object.Debug: /Users/rsalm/Projects/Ivina/bin/Debug/gtest-object
 	/bin/rm -f /Users/rsalm/Projects/Ivina/bin/Debug/gtest-object
 
 
+PostBuild.gtest-object-manager.Debug:
+PostBuild.gtest.Debug: /Users/rsalm/Projects/Ivina/bin/Debug/gtest-object-manager
+PostBuild.object.Debug: /Users/rsalm/Projects/Ivina/bin/Debug/gtest-object-manager
+/Users/rsalm/Projects/Ivina/bin/Debug/gtest-object-manager:\
+	/Users/rsalm/Projects/Ivina/lib/Debug/libgtest.a\
+	/Users/rsalm/Projects/Ivina/lib/Debug/libobject.a
+	/bin/rm -f /Users/rsalm/Projects/Ivina/bin/Debug/gtest-object-manager
+
+
 PostBuild.counters.Debug:
 PostBuild.decrementor.Debug: /Users/rsalm/Projects/Ivina/lib/Debug/libcounters.a
 PostBuild.incrementor.Debug: /Users/rsalm/Projects/Ivina/lib/Debug/libcounters.a
@@ -116,6 +125,15 @@ PostBuild.object.Release: /Users/rsalm/Projects/Ivina/bin/Release/gtest-object
 	/Users/rsalm/Projects/Ivina/lib/Release/libgtest.a\
 	/Users/rsalm/Projects/Ivina/lib/Release/libobject.a
 	/bin/rm -f /Users/rsalm/Projects/Ivina/bin/Release/gtest-object
+
+
+PostBuild.gtest-object-manager.Release:
+PostBuild.gtest.Release: /Users/rsalm/Projects/Ivina/bin/Release/gtest-object-manager
+PostBuild.object.Release: /Users/rsalm/Projects/Ivina/bin/Release/gtest-object-manager
+/Users/rsalm/Projects/Ivina/bin/Release/gtest-object-manager:\
+	/Users/rsalm/Projects/Ivina/lib/Release/libgtest.a\
+	/Users/rsalm/Projects/Ivina/lib/Release/libobject.a
+	/bin/rm -f /Users/rsalm/Projects/Ivina/bin/Release/gtest-object-manager
 
 
 PostBuild.counters.Release:
@@ -206,6 +224,15 @@ PostBuild.object.MinSizeRel: /Users/rsalm/Projects/Ivina/bin/MinSizeRel/gtest-ob
 	/bin/rm -f /Users/rsalm/Projects/Ivina/bin/MinSizeRel/gtest-object
 
 
+PostBuild.gtest-object-manager.MinSizeRel:
+PostBuild.gtest.MinSizeRel: /Users/rsalm/Projects/Ivina/bin/MinSizeRel/gtest-object-manager
+PostBuild.object.MinSizeRel: /Users/rsalm/Projects/Ivina/bin/MinSizeRel/gtest-object-manager
+/Users/rsalm/Projects/Ivina/bin/MinSizeRel/gtest-object-manager:\
+	/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libgtest.a\
+	/Users/rsalm/Projects/Ivina/lib/MinSizeRel/libobject.a
+	/bin/rm -f /Users/rsalm/Projects/Ivina/bin/MinSizeRel/gtest-object-manager
+
+
 PostBuild.counters.MinSizeRel:
 PostBuild.decrementor.MinSizeRel: /Users/rsalm/Projects/Ivina/lib/MinSizeRel/libcounters.a
 PostBuild.incrementor.MinSizeRel: /Users/rsalm/Projects/Ivina/lib/MinSizeRel/libcounters.a
@@ -292,6 +319,15 @@ PostBuild.object.RelWithDebInfo: /Users/rsalm/Projects/Ivina/bin/RelWithDebInfo/
 	/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libgtest.a\
 	/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libobject.a
 	/bin/rm -f /Users/rsalm/Projects/Ivina/bin/RelWithDebInfo/gtest-object
+
+
+PostBuild.gtest-object-manager.RelWithDebInfo:
+PostBuild.gtest.RelWithDebInfo: /Users/rsalm/Projects/Ivina/bin/RelWithDebInfo/gtest-object-manager
+PostBuild.object.RelWithDebInfo: /Users/rsalm/Projects/Ivina/bin/RelWithDebInfo/gtest-object-manager
+/Users/rsalm/Projects/Ivina/bin/RelWithDebInfo/gtest-object-manager:\
+	/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libgtest.a\
+	/Users/rsalm/Projects/Ivina/lib/RelWithDebInfo/libobject.a
+	/bin/rm -f /Users/rsalm/Projects/Ivina/bin/RelWithDebInfo/gtest-object-manager
 
 
 PostBuild.counters.RelWithDebInfo:

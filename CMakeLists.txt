@@ -31,7 +31,8 @@ set(CMAKE_HEADER_PUBLIC "${CMAKE_SOURCE_DIR}/inc")
 include_directories(
 	"${CMAKE_SOURCE_DIR}/inc" 
 	"${CMAKE_SOURCE_DIR}/ext/inc" 
-	) 
+	)
+
 add_subdirectory("src")
 add_subdirectory("doc")
 add_subdirectory("ext")

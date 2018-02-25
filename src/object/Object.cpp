@@ -1,16 +1,16 @@
 #include "Object.h"
 
-Object::Object()
+Object::Object(const std::string n,const unsigned int p):IObject(n,p)
 {
-	pid = ++gid;
-}
-
-unsigned int Object::getGid()
-{
-	return gid;
+    
 }
 	
-unsigned int Object::getPid()
+const unsigned int Object::getPid()
 {
 	return pid;
+}
+
+const std::string Object::getName()
+{
+    return name;
 }

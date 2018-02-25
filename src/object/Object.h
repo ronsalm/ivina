@@ -5,7 +5,8 @@
 class Object: public IObject
 {
 	public:
-		Object();
-		unsigned int getGid();
-		unsigned int getPid();
+        Object(const std::string name,const unsigned int);
+    
+		const unsigned int getPid();
+        const std::string getName();
 };

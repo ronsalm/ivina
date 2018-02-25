@@ -24,11 +24,6 @@ Counter::Counter()
 	maximum = 0;
 }
 
-unsigned int Counter::getGid()
-{
-	return object->getGid();
-}
-
 unsigned int Counter::getPid()
 {
 	return object->getPid();

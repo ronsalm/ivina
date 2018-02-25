@@ -33,7 +33,6 @@ class Counter: public ICounter
 		virtual bool validate();	/** Check if the counter is within the threshold */
 
 		virtual unsigned int getPid();	/** Get the Private Id from Object Info */
-		virtual unsigned int getGid();	/** Get the Global Id from Objecet Info*/
 
 		virtual unsigned int getGCntr();	/** Get the amount of times globally the count() function is called */
 		virtual unsigned int getPCntr();	/** Get the amount of times count() is called */

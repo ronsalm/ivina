@@ -17,7 +17,7 @@ TEST( Construct, Factory)
 TEST( Building, Counter )
 {
 	std::unique_ptr<CounterFactory> cf = std::make_unique<CounterFactory>();
-	std::unique_ptr<ICounter> c = std::move( cf->build(COUNTER) ); 
+    std::unique_ptr<ICounter> c = std::move( cf->build("Counter") );
 
 	/* Test if Factory returns object */
 	ASSERT_NE( nullptr, c );
@@ -29,7 +29,7 @@ TEST( Building, Counter )
 TEST( Building, Incrementor )
 {
 	std::unique_ptr<CounterFactory> cf = std::make_unique<CounterFactory>();
-	std::unique_ptr<ICounter> c = std::move(cf->build(INCREMENTOR)); 
+	std::unique_ptr<ICounter> c = std::move(cf->build("Incrementor"));
 
 	/* Test if Factory returns object */
 	ASSERT_NE( nullptr, c );
@@ -41,13 +41,21 @@ TEST( Building, Incrementor )
 TEST( Building, Decrementor )
 {
 	std::unique_ptr<CounterFactory> cf = std::make_unique<CounterFactory>();
-	std::unique_ptr<ICounter> c = std::move( cf->build(DECREMENTOR) ); 
+	std::unique_ptr<ICounter> c = std::move( cf->build("Decrementor") ); 
 
 	/* Test if Factory returns object */
 	ASSERT_NE( nullptr, c );
 
 	/* Test if object derevative is a Counter */
 	ASSERT_NE( nullptr, dynamic_cast<Decrementor*>( c.get() ) );
+}
+
+TEST( Building, Undefined )
+{
+    std::unique_ptr<CounterFactory> cf = std::make_unique<CounterFactory>();
+    
+    ASSERT_ANY_THROW( std::unique_ptr<ICounter> c = std::move( cf->build("Undefined")) );
+    
 }
 
 int main( int argc, char**argv)
