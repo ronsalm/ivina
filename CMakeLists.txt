@@ -43,5 +43,3 @@ enable_testing()
 # Program
 add_executable(application ${CMAKE_SOURCE_DIR}/src/main.cpp ${CMAKE_HEADER_PUBLIC} )
 target_link_libraries(application core)
-
-# Test
