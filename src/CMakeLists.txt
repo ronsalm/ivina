@@ -1,4 +1,2 @@
-add_subdirectory("object")
-add_subdirectory("counters")
-
+add_subdirectory(core)
 enable_testing()

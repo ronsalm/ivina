@@ -1,8 +1,8 @@
 # Version
 cmake_minimum_required(VERSION 3.2.7)
 
-set(Counter_VERSION_MAJOR 1)
-set(Counter_VERSION_MINOR 0)
+set(IVY_VERSION_MAJOR 1)
+set(IVY_VERSION_MINOR 0)
 
 # Project Name
 project (Application)
@@ -16,7 +16,7 @@ endif(UNIX)
 
 set (CMAKE_CXX_FLAGS                "-Wall")
 set (CMAKE_CXX_FLAGS_DEBUG          "-g")
-set (CMAKE_CXX_STANDARD 14)
+set (CMAKE_CXX_STANDARD 17)
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Directory Setup
@@ -42,4 +42,4 @@ enable_testing()
 
 # Program
 add_executable(application ${CMAKE_SOURCE_DIR}/src/main.cpp ${CMAKE_HEADER_PUBLIC} )
-target_link_libraries(application counters object)
+target_link_libraries(application core)
